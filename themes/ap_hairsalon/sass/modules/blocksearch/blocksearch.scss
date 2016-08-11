@@ -1,0 +1,92 @@
+@import "compass";
+@import "theme_variables";
+
+
+.ac_results {
+  background: $light-background;
+  width: 271px;
+  margin-top: -1px;
+  li {
+    padding: 0 10px;
+    font-weight: normal;
+    color: #686666;
+    font-size: 13px;
+    line-height: 22px;
+    &.ac_odd {
+      background: $light-background;
+    }
+    &:hover, &.ac_over {
+      background: $theme-color-default; 
+    }
+  }
+} 
+
+#search_block_top{
+  position: absolute;
+  width: 90%;
+  @include rtl-right(40px);
+}
+form#searchbox {
+  input[type="text"] {
+    display: inline-block;
+    font-weight: 100;
+    outline: none;
+    color: #555;
+    width: 0;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    @include rtl-right(0);
+    background: none;
+    z-index: 3;
+    overflow: hidden;
+    @include transition(width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000));
+    @include border-radius(0);
+    cursor: pointer;
+    border:none;
+    z-index: 9;
+    @include box-shadow(none);
+      &::-webkit-input-placeholder {font-size: 0;}
+      &:-moz-placeholder { /* Firefox 18- */font-size: 0;}
+      &::-moz-placeholder {  /* Firefox 19+ */font-size: 0;}
+      &:-ms-input-placeholder {  font-size: 0;}
+  }
+  input[type="text"]:focus {
+    width: 740px;
+    z-index: 99;
+    height: 40px;
+    background-color: $white;
+    cursor: text;
+    overflow: inherit;
+    outline: none;
+    @include rtl-padding-left(10px);
+    @include border-radius(0);
+    top: 0px;
+    @include rtl-right(40px);
+        &::-webkit-input-placeholder {font-size: 13px;}
+        &:-moz-placeholder { /* Firefox 18- */font-size: 13px;}
+        &::-moz-placeholder {  /* Firefox 19+ */font-size: 13px;}
+        &:-ms-input-placeholder {  font-size: 13px;}
+  }
+  button[type="submit"] {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    color: $theme-color-secondary;
+    border: none;
+    background: $white;
+    cursor: pointer;
+    position: absolute;
+    @include rtl-right(0);
+    &:focus{
+      outline: none;
+    }
+  }
+  &:hover{
+    .btn{
+      background-color: $theme-color-default;
+      border-color:$theme-color-default;
+      color: $white;
+    }
+  }
+}

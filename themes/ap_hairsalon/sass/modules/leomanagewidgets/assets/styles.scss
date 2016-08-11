@@ -1,0 +1,264 @@
+@import "compass";
+@import "theme_variables";
+ 
+.custom_slide {
+	a:first-child {
+		img {
+			margin-bottom: 20px;
+		}
+	}
+}
+.img-top{
+ .widget{
+   .block{
+      margin-bottom: 20px;
+    }
+ }
+}
+/* Effect */
+.view-fifth {
+  position:relative; 
+  overflow:hidden;
+  .mask {
+    position:absolute;
+    background-color:#333333;
+    top:0;
+    height:100%;
+    color:#fff;
+    width:100%;
+    text-align:center;
+    @include transform(translateX(-100%));
+    @include opacity(1);
+    @include transition(all 0.5s ease-in-out);
+    > div { padding:0 10px;}
+  }
+  a{
+    &.info {
+      background:#000;
+      @include border-radius(4px);
+      color:#fff;
+      display: inline-block;
+      padding: 4px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-top:10px;
+      &:hover {background-color:#57AFDA;}
+    }
+  }
+  img {
+    @include transition(all 0.5s ease-in-out);
+  }
+  &:hover{
+    img{
+      @include transform(translateX(100%));
+    }
+    .mask{
+      @include transform(translateX(0));
+    }
+  }
+}
+
+
+// Footer
+
+// Tab nav pills
+.block{
+  .nav-pills {
+    > li.active {
+      > a{
+        position: relative;
+        &:before{
+          content: "\f0d7";
+          position: absolute;
+          bottom: -7px;
+          height: 10px;
+          line-height: 10px;
+          right: 50%;
+          margin-right: -4px;
+          font-family: $font-icon;
+          color: $nav-pills-active-link-hover-bg;
+          font-size: 19px;
+          z-index: 9;
+        }
+      }    
+    }
+  }
+  .panel-group{
+    margin-bottom: 0;
+  }
+
+}
+.widget-video{
+  margin-bottom: 15px;
+}
+
+// Title Widget
+.widget{
+  .leomanagerwidgets {
+    text-align: center;
+  }
+}
+// Widget Best Seller
+.widget-bestseller{
+  .block{
+    margin-bottom: 10px;
+  }
+  .title_block{
+    padding: 20px 15px;
+    font-size: 14px;
+    font-family: $font-family-base;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    @include rtl-text-align-left();
+  }
+  .block_content{
+    background: $theme-color-secondary;
+    height: 564px;
+  }
+  .product-block{
+    border-bottom: 1px dotted rgba(225,225,225,0.2);
+    padding: 21px 20px;
+    margin-bottom: 0;
+    .product-name{
+      color: #FFF;
+      margin-bottom: 15px;
+    }
+  }
+  ul{
+    padding: 0;
+    li{
+      &:last-child{
+        .product-block{
+          border-bottom: none;
+        }
+      }
+      &.media{
+        margin-top: 0;
+
+      }
+    }
+  }
+}
+// html-reinsurance
+.html-reinsurance{
+  color: #FFF;
+  .fa{
+    font-size: 24px;
+    color: $white;
+  }
+  .media-heading{
+    font-family: $font-family-base;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .media{
+    > .pull-left{
+      @include rtl-margin-right(25px);
+    }
+  }
+  p{
+    margin: 0;
+  }
+}
+// Footer
+.widget{
+  .block{
+    margin-bottom: 50px;
+  }
+  &.widget-bestseller{
+    .block{
+      margin-bottom: 10px;
+    }
+  }
+  &.image-top{
+    .block{
+      margin-bottom: 20px;
+    }
+  }
+  &.payment{
+    @include rtl-text-align-right();
+  }
+  .about-us{
+    width: 85%;
+    background: url("../../../../img/default/bg_aboutus.png") no-repeat 0 35px transparent;
+    height: 100%;
+    line-height: 20px;
+    padding-bottom: 20px;
+    img{
+      margin-bottom: 30px;
+    }
+  }
+  .contact-us{
+    .fa{
+      color: #FFF;
+      @include rtl-margin-right(15px);
+    }
+    li{
+      margin-bottom: 20px;
+    }
+  }
+  &.adv-home{
+    height: 567px;
+    img{
+      padding-top: 180px;
+      float: left;
+    }
+    &.fs-fullwidth{
+      background-image: url(../../../../img/patterns/full-screen/style-1.jpg);
+      background-attachment: scroll;
+      background-size: auto;
+      background-position: 50% 0%;
+      background-repeat: repeat-x;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 0px 1000px;
+      @include rtl-margin-left(-1000px);
+      overflow: hidden;
+      @include box-sizing(content-box);
+      float: none;
+      display: inline-block;
+  } 
+  }
+}
+.follow{
+  .iconbox {
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.5);
+    @include rtl-margin-right(8px);
+    @include transition(all 0.35s);
+    @include transform(rotate(45deg));
+    em{
+      @include transform(rotate(-45deg));
+      @include transition(all 0.2s);
+      color: $theme-color-secondary;
+      line-height: 25px;
+    }
+    &:hover{
+      background: $theme-color-default;
+      em{
+        color: $white;
+      }
+    }
+  }
+}
+//Testimonials
+.testimonials{
+  text-align: center;
+  color: $theme-color-secondary;
+}
+
+.footer-top{
+  .widget-raw-html.block{
+    margin-bottom: 0;
+  }
+}

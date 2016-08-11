@@ -1,0 +1,180 @@
+// product-item.scss
+
+@import "vars/product-item.vars"; 
+
+/* product style */
+.product-block{ 
+    position: relative;
+    overflow: hidden; 
+    margin: 0 0 10px;
+    @include box-sizing(border-box);
+    .product-meta{        
+        position: relative;
+		padding: 1px 10px;
+    }
+    // rating  
+    .nb-comments{
+        display: none;
+    }
+    .star_content{
+        display: inline-block;
+        padding: 2px 4px 3px 4px;
+    }
+    .product-rating, .norating { 
+        min-height: 25px;
+        font-size: $product-rating-font-size;
+    }
+
+	// price
+    .content_price{
+        margin: 0 0 10px;
+    }
+	.price{
+		color: $product-price-color;           
+		font-weight: 700;
+		font-family: $product-price-font-family;
+        font-size: $product-price-font-size;
+	}
+	.price-old, .old-price {
+		color: $product-price-old-color;
+		text-decoration: line-through;        
+	}
+	.price-percent-reduction{
+	    background: $product-price-reduction-bg;   
+	    color: $white;
+	    padding: 3px 5px;
+	}
+	 
+	// desc
+    .product-desc{
+        height: 40px;
+        overflow: hidden;
+        display: none;
+    }
+
+	// title name
+    .name{
+        text-transform: none; 
+        a {
+            color: $product-name-color;
+            font-size: $product-name-font-size;
+            font-family: $product-name-font-family;  
+            font-weight: 500;      
+            text-decoration: none;
+            @include inline-block();                                       
+            &:hover{
+                color: $product-name-hover-color;
+            }
+        }
+    }
+   
+	// image
+    .image{
+        position: relative;     
+        overflow: hidden;
+        text-align: center;
+        @include rounded-corners ($product-image-radius);
+        margin: 10px 0; 
+        border: $product-image-border;
+        text-align: center;
+        img{
+            display: inline-block;
+        }
+        .product_img_link {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            &:before {
+                position: absolute;
+                content: "";
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                visibility: hidden;
+                @include rgba($theme-color-secondary, 0.6);
+                @include opacity(0);
+                @include transition(all 0.4s);
+                @include transform(scale(0.9));
+            }
+        }
+    }
+    .product-additional{
+        position: absolute;
+        top: 0px;
+        visibility: hidden;
+        left: 0px;
+        @include opacity(0);
+    } 
+    
+    &:hover {	 
+        .product-additional{
+            // top: 0px;
+            visibility: visible;
+            @include transition(all 0.5s ease 0s);
+            @include opacity(1);
+        }
+    }
+
+    // label
+    .product-label{
+        position: absolute;
+        top: 5px;
+        background: url("#{$image-theme-base-path}default/icon-new-sale.png") no-repeat 0 0 transparent;
+        width: 60px;
+        height: 60px;
+        color: #FFF;
+        text-align: center;
+        font-size: 13px;
+        text-transform: uppercase;
+        line-height: 40px;
+        font-weight: 600;
+        padding: 10px;
+        overflow: hidden;
+        @include transition(all 0.5s ease 0s);
+        &.label-new{
+            @include rtl-left(5px);
+            &:hover{
+                background-position: -74px 0;
+            }
+        }
+        &.label-sale{
+            @include rtl-right(5px);
+            background-position: -74px 0;
+            &:hover{
+                background-position: 0 0;
+            }
+        }
+    }
+
+    .product-flags{
+    	@include rtl-float-right();
+    }
+    .availability{
+        @include rtl-float-left();
+    } 
+    .online_only{}
+    .discount{}
+    .functional-buttons{
+        > div{
+            &.wishlist{
+                position: relative;
+                z-index: 10;
+            }
+        }
+    }
+}
+
+.ajax_add_to_cart_button{
+    background: $button-addtocart-bg;
+    color: $button-addtocart-color;
+    font-size: $button-addtocart-font-size;
+    font-family: $button-addtocart-font-family;
+    border: 1px solid $button-addtocart-border;
+    &:hover{
+        color: $button-addtocart-color-hover;
+        background: $button-addtocart-bg-hover;
+        border: 1px solid $button-addtocart-border-hover;
+    }
+
+} 

@@ -1,0 +1,120 @@
+@import "vars/block.vars";
+
+// block.scss
+
+// block in sidebar - left column, right column
+.sidebar{
+    .#{$block-selector} {
+        margin-bottom: $block-margin-bottom;   
+        .#{$block-heading-selector}{
+            color: $block-heading-color;
+            a{
+                color: $block-heading-color;
+            }
+            position: relative;                                                             
+            text-transform: $block-heading-transform;
+            font-family: $block-heading-font-family;             
+            font-size: $block-heading-font-size;
+            letter-spacing: $block-heading-letter-spacing;   
+            background: $block-heading-bg;  
+            @include rtl-padding(10px, 25px, 20px, 0);
+            @include rounded-corners ($block-heading-radius);
+            border: $block-heading-border; 
+            margin: 0;
+        }
+        .#{$block-content-selector} {
+            background: $block-content-bg; 
+            @include clearfix(); 
+            @include rounded-corners ($block-content-radius);
+            padding: $block-content-padding;    
+            border: $block-content-border;
+
+        }
+        .product-block{
+            .img{
+                img{
+                    border: $main-border;
+                }
+            }
+        }
+    }
+}
+
+// block-variant($border, $heading-text-color, $heading-bg-color, $heading-border)
+// Contextual variations
+.#{$block-prefix}-default {
+  @include block-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+}
+.#{$block-prefix}-primary {
+  @include block-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
+}
+.#{$block-prefix}-success {
+  @include block-variant($panel-success-border, $panel-success-text, $panel-success-heading-bg, $panel-success-border);
+}
+.#{$block-prefix}-info {
+  @include block-variant($panel-info-border, $panel-info-text, $panel-info-heading-bg, $panel-info-border);
+}
+.#{$block-prefix}-warning {
+  @include block-variant($panel-warning-border, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-border);
+}
+.#{$block-prefix}-danger {
+  @include block-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+}
+.#{$block-prefix}-highlighted {
+    @include block-variant($block-highlighted-border, $block-highlighted-text, $block-highlighted-bg, $block-highlighted-border);
+}
+
+
+// block in header
+// block in footer
+.footer-container{
+    .#{$block-selector} {
+        .#{$block-heading-selector}{
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: $font-family-base;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            a{
+                color: #FFF;
+            }
+        }
+    }
+}
+
+// block in main
+.columns-container{
+    .widget{
+        .#{$block-selector} {
+            .#{$block-heading-selector}{
+                position: relative;
+                display: inline-block; 
+                padding: 10px 25px 30px;
+                text-transform: none;
+                font-family: $font-family-septenary;             
+                font-size: 30px;
+                color: $theme-color-secondary;
+                margin: 0;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    background: url("#{$image-theme-base-path}default/bg_title_block.png") no-repeat 0 0 transparent;
+                    width: 34px;
+                    height: 9px;
+                    right: 100%;
+                    top: 25px;
+                } 
+                &:after{
+                    content: "";
+                    position: absolute;
+                    background: url("#{$image-theme-base-path}default/bg_title_block.png") no-repeat 0 0 transparent;
+                    width: 34px;
+                    height: 9px;
+                    left: 100%;
+                    top: 25px;
+                }     
+            }
+        }
+    }
+}

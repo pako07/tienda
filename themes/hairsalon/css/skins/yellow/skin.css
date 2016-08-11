@@ -1,0 +1,212 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+a:hover, a:focus {
+  color: #ebb04e;
+}
+
+#topbar a:hover {
+  color: #ebb04e;
+}
+
+#footer a:hover {
+  color: #ebb04e;
+}
+
+#cart .title-cart {
+  background-color: #ebb04e;
+}
+
+#cart .cart-quantity {
+  background: #ebb04e;
+}
+
+.fs-style.footer-top:before {
+  background: #ebb04e;
+}
+
+.carousel-control:hover {
+  background: #ebb04e;
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+  background-color: #ebb04e;
+}
+
+.btn-inverse {
+  color: white;
+  background-color: #ebb04e;
+  border-color: #ebb04e;
+}
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active {
+  color: #9c9c9c;
+  background-color: transparent;
+  border-color: #dddddd;
+}
+.open .btn-inverse.dropdown-toggle {
+  color: #9c9c9c;
+  background-color: transparent;
+  border-color: #dddddd;
+}
+.btn-inverse:active, .btn-inverse.active {
+  background-image: none;
+}
+.open .btn-inverse.dropdown-toggle {
+  background-image: none;
+}
+.btn-inverse.disabled, .btn-inverse.disabled:hover, .btn-inverse.disabled:focus, .btn-inverse.disabled:active, .btn-inverse.disabled.active, .btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:focus, .btn-inverse[disabled]:active, .btn-inverse[disabled].active, fieldset[disabled] .btn-inverse, fieldset[disabled] .btn-inverse:hover, fieldset[disabled] .btn-inverse:focus, fieldset[disabled] .btn-inverse:active, fieldset[disabled] .btn-inverse.active {
+  background-color: #ebb04e;
+  border-color: #ebb04e;
+}
+.btn-inverse .badge {
+  color: #ebb04e;
+  background-color: white;
+}
+
+.btn-outline {
+  color: white;
+  background-color: #ebb04e;
+  border-color: #ebb04e;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+  color: white;
+  background-color: #272727;
+  border-color: #272727;
+}
+.open .btn-outline.dropdown-toggle {
+  color: white;
+  background-color: #272727;
+  border-color: #272727;
+}
+.btn-outline:active, .btn-outline.active {
+  background-image: none;
+}
+.open .btn-outline.dropdown-toggle {
+  background-image: none;
+}
+.btn-outline.disabled, .btn-outline.disabled:hover, .btn-outline.disabled:focus, .btn-outline.disabled:active, .btn-outline.disabled.active, .btn-outline[disabled], .btn-outline[disabled]:hover, .btn-outline[disabled]:focus, .btn-outline[disabled]:active, .btn-outline[disabled].active, fieldset[disabled] .btn-outline, fieldset[disabled] .btn-outline:hover, fieldset[disabled] .btn-outline:focus, fieldset[disabled] .btn-outline:active, fieldset[disabled] .btn-outline.active {
+  background-color: #ebb04e;
+  border-color: #ebb04e;
+}
+.btn-outline .badge {
+  color: #ebb04e;
+  background-color: white;
+}
+
+.block-highlighted .title_block {
+  background-color: #ebb04e;
+}
+
+.breadcrumb {
+  color: #ebb04e;
+}
+.breadcrumb a:hover {
+  color: #ebb04e;
+}
+
+.popup-over .popup-content ul li.selected, .popup-over .popup-content ul li.selected a {
+  color: #ebb04e;
+}
+
+#leo-megamenu .navbar-nav > li.active > a, #leo-megamenu .navbar-nav > li:hover > a, #leo-megamenu .navbar-nav > li:focus > a {
+  color: #ebb04e;
+}
+#leo-megamenu .navbar-nav > li:hover, #leo-megamenu .navbar-nav > li:focus, #leo-megamenu .navbar-nav > li:active {
+  color: #ebb04e;
+}
+#leo-megamenu .navbar-nav > li:hover > .caret, #leo-megamenu .navbar-nav > li:active > .caret {
+  color: #ebb04e;
+}
+#leo-megamenu .dropdown-menu a:hover {
+  color: #ebb04e;
+}
+#leo-megamenu .dropdown-menu a:hover > .menu-title {
+  color: #ebb04e;
+}
+#leo-megamenu .dropdown:hover > a {
+  color: #ebb04e;
+}
+#leo-megamenu .dropdown:hover > a .fa {
+  color: #ebb04e;
+}
+
+.leo-widget .product-block .content_price .price {
+  color: #ebb04e;
+}
+
+.product-block .price {
+  color: #ebb04e;
+}
+.product-block .name a:hover {
+  color: #ebb04e;
+}
+.product-block .functional-buttons > div a:hover {
+  background: #ebb04e;
+  border-color: #ebb04e;
+}
+
+.nav-tabs.page-product-heading > li.active > a, .nav-tabs.page-product-heading > li.active > a:hover, .nav-tabs.page-product-heading > li.active > a:focus {
+  color: #ebb04e;
+  border-color: #ebb04e;
+}
+
+.box-info-product .our_price_display {
+  color: #ebb04e;
+}
+
+#quantity_wanted_p .btn:hover {
+  color: #ebb04e;
+}
+
+#footer #newsletter_block_left form .btn {
+  background: #ebb04e;
+}
+
+.follow .iconbox:hover {
+  background: #ebb04e;
+}
+
+#add_to_cart .btn {
+  border-color: #272727;
+}
+#add_to_cart .btn:hover {
+  background: #ebb04e;
+  border-color: #ebb04e;
+}
+
+.tp-bullets.simplebullets.round .bullet:hover, .tp-bullets.simplebullets.round .bullet.selected, .tp-bullets.simplebullets.navbar .bullet:hover, .tp-bullets.simplebullets.navbar .bullet.selected {
+  background-color: #ebb04e !important;
+}
+
+.tp-leftarrow.default:hover, .tp-rightarrow.default:hover {
+  background: #ebb04e !important;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls .owl-page:hover span {
+  background-color: #ebb04e;
+}
+
+#back-top a {
+  background: #ebb04e;
+}
+
+.columns-container .widget .block .title_block:after, .columns-container .widget .block .title_block:before {
+  background: url("../../../img/yellow/bg_title_block.png") no-repeat 0 0 transparent;
+}
+
+.productscategory_h3:before,
+.productscategory_h3:after {
+  background: url("../../../img/yellow/bg_title_block.png") no-repeat 0 0 transparent;
+}

@@ -1,0 +1,205 @@
+
+//base
+a{
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}
+//prestashop page
+#topbar{
+  a{
+    &:hover{color: $link-hover-color;}
+  }
+}
+#footer{
+  a{
+    &:hover{color: $link-hover-color;}
+  }
+}
+#cart .title-cart{
+  background-color: $theme-color-default;
+}
+#cart .cart-quantity{
+  background: $theme-color-default;
+}
+.fs-style.footer-top:before{
+  background: $theme-color-default;
+}
+// Carousel button
+.carousel-control{
+  &:hover{
+    background: $theme-color-default;
+  }
+}
+.owl-theme .owl-controls .owl-buttons div:hover{
+  background-color: $theme-color-default;
+}
+//@mixin button-variant-outline($color, $background, $border, $colorhover, $bghover, $borderhover ) {
+.btn-inverse{
+  @include button-variant-outline($white, $theme-color-default, $theme-color-default, $text-color, $nocolor , $border-color );
+} 
+.btn-outline{
+  @include button-variant-outline($white, $theme-color-default , $theme-color-default , $white, $theme-color-secondary, $theme-color-secondary );
+}
+.block-highlighted .title_block{
+  background-color: $block-highlighted-bg;
+}
+// BREADCRUMB
+.breadcrumb {
+  color: $breadcrumb-active-color;       
+  a {
+    &:hover {
+        color: $breadcrumb-active-color;
+    }
+  }
+
+}
+.popup-over{
+  .popup-content{
+    ul{
+      li{
+        &.selected, &.selected a{
+          color: $theme-color-default;
+        }
+      }
+    }
+  }
+}
+
+
+// Menu Top
+##{$app-brand-prefix}-megamenu {
+  .navbar-nav{
+    > li{
+      &.active,
+      &:hover,
+      &:focus{
+        > a{
+          color: $megamenu-link-hover-color;
+        }
+      }
+      &:hover,&:focus,&:active{         
+        color: $megamenu-link-hover-color;
+      }
+      &:hover > .caret, &:active > .caret{
+        color: $megamenu-link-hover-color;
+      }
+    }
+  }
+  .dropdown-menu{
+    a{
+      &:hover{
+        color: $theme-color-default;
+        > .menu-title{
+          color: $megamenu-sub-link-hover-color;
+        }
+      }
+    }
+  }
+  .dropdown{    
+    &:hover{
+      > a{    
+        color: $megamenu-link-hover-color;
+        .fa{
+          color: $megamenu-link-hover-color;
+        }                 
+      }
+    }
+  }
+}
+
+.leo-widget{
+  .product-block{
+    .content_price{
+      .price{
+        color: $theme-color-default;
+      }
+    }
+  }
+}
+// Product Item
+.product-block{
+  .price{
+    color: $product-price-color; 
+  }
+  .name{
+    a{
+      &:hover{
+        color: $product-name-hover-color;
+      }
+    }
+  }
+  .functional-buttons{
+    > div{
+      a{
+        &:hover{
+          background: $theme-color-default;
+          border-color: $theme-color-default;
+        }
+      }
+    }
+  }
+}
+
+// Product Page
+//Tab
+.nav-tabs{
+  &.page-product-heading{
+    > li{
+      &.active{
+        > a, > a:hover, > a:focus{
+          color: $theme-color-default;
+          border-color: $theme-color-default;
+        }
+      }
+    }
+  }
+}
+.box-info-product{
+  .our_price_display{
+    color: $theme-color-default;
+  }
+}
+#quantity_wanted_p{
+  .btn{
+    &:hover{
+      color: $theme-color-default;
+    }
+  }
+}
+// Form Newsletter
+#footer{
+  #newsletter_block_left{
+    form{
+      .btn{
+        background: $theme-color-default;
+      }
+    }
+  }
+}
+.follow .iconbox:hover{
+  background: $theme-color-default;
+}
+#add_to_cart .btn{
+  border-color: $theme-color-secondary;
+  &:hover{
+    background: $theme-color-default;
+    border-color: $theme-color-default;
+  }
+}
+// Slideshow
+.tp-bullets.simplebullets.round .bullet:hover, .tp-bullets.simplebullets.round .bullet.selected, .tp-bullets.simplebullets.navbar .bullet:hover, .tp-bullets.simplebullets.navbar .bullet.selected {
+  background-color: $theme-color-default !important;
+}
+.tp-leftarrow.default:hover, .tp-rightarrow.default:hover {
+  background: $theme-color-default !important;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls .owl-page:hover span{
+  background-color: $theme-color-default;
+}
+#back-top {
+  a{    
+    background: $theme-color-default;
+  }
+}

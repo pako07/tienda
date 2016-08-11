@@ -1,0 +1,48 @@
+.carousel-control{
+  z-index: 10;
+  background: #1d1d1d;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 30px;
+  @include transform(rotate(-45deg));
+  @include rtl-left(0);
+  @include rtl-right(0);
+  color: $nocolor;
+  &:before{
+    content: "\f104";
+    font-size: 18px;
+    font-family: $font-icon;
+    color: #FFF;
+    position: absolute;
+    text-shadow: none;
+    @include transform(rotate(45deg));
+  }
+  &.right{
+    @include rtl-left(auto);
+    @include rtl-right(0);
+    &:before{
+      content: "\f105";
+    }
+  }
+  &:hover{
+    background: $theme-color-default;
+    @include opacity(1);
+  }
+}
+
+//@mixin button-variant-outline($color, $background, $border, $colorhover, $bghover, $borderhover ) {
+.btn-inverse{
+  @include button-variant-outline($white, $theme-color-default, $theme-color-default, $text-color, $nocolor , $border-color );
+} 
+.btn-outline{
+  @include button-variant-outline($link-color, $theme-color-default , $theme-color-default , $white, $theme-color-secondary, $theme-color-secondary );
+}
+.btn{
+  @include border-radius(0);
+  color: $white;
+  font-size: 13px;
+  border-color: $white;
+}
