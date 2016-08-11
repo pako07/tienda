@@ -10,8 +10,8 @@ SetEnv HTTP_MOD_REWRITE On
 RewriteEngine on
 
 
-#Domain: localhost
-RewriteRule . - [E=REWRITEBASE:/Mitienda/]
+#Domain: javiercecyte60.esy.es
+RewriteRule . - [E=REWRITEBASE:/Store/]
 RewriteRule ^api$ api/ [L]
 
 RewriteRule ^api/(.*)$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
@@ -31,6 +31,6 @@ AddType application/x-font-woff .woff
 </IfModule>
 
 #If rewrite mod isn't enabled
-ErrorDocument 404 /Mitienda/index.php?controller=404
+ErrorDocument 404 /Store/index.php?controller=404
 
 # ~~end~~ Do not remove this comment, Prestashop will keep automatically the code outside this comment when .htaccess will be generated again
